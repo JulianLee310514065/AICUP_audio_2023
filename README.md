@@ -33,9 +33,13 @@ pip install sklearn
 ```
 若因模組更新導致出現問題，可指定版本
 ```
-pip install librosa=='0.10.0.post2'
-pip install sklearn=='1.2.2'
+pip install librosa==0.10.0.post2
+pip install sklearn==1.2.2
 ```
 
 # Prepared dataset
 [Google Drive Link](https://drive.google.com/drive/folders/10YqPS2SABOZw6mT9jD5gEUhVc2MnXaMK?usp=sharing)
+
+# Download the best model
+在 [Repositry](# Repository structuree)中有五個.pth檔，即為最好的模型，下載使用即可。
+
