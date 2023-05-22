@@ -39,7 +39,36 @@ pip install sklearn==1.2.2
 
 # Prepared dataset
 [Google Drive Link](https://drive.google.com/drive/folders/10YqPS2SABOZw6mT9jD5gEUhVc2MnXaMK?usp=sharing)
+```
+MFCC製作過程
+```
 
 # Download the best model
-在 [Repositry](# Repository structuree)中有五個.pth檔，即為最好的模型，下載使用即可。
+在[repository](https://github.com/JulianLee310514065/AICUP_audio_2023/#Repository-structure)中有五個.pth檔，即為最好的模型，下載使用即可。
 
+# Training
+```
+介紹
+```
+
+
+# Inference (public、private data)
+```
+介紹
+```
+
+# Reproducing submission
+若要重現最終提交結果，可以做以下步驟，最後上傳結果也有在[repository](https://github.com/JulianLee310514065/AICUP_audio_2023/#Repository-structure)中，為`submission.csv`
+
+# Acknowledgement
+我們參考了以下網站
+
+# Citation
+```
+@misc{
+    title  = {AICUP_audio_2023},
+    author = {Chang-Yi Lee}
+    url    = {https://github.com/JulianLee310514065/AICUP_audio_2023},
+    year   = {2023}
+}
+```
