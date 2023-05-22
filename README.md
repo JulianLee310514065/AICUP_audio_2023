@@ -4,7 +4,7 @@
 # Leaderboard
 |Public Score|Public Rank|Private Score|Private Rank|
 |-|-|-|-|
-|0.600654|7/371|0.607568|6/371|
+|0.600654|7 / 371|0.607568|6 / 371|
 
 
 
