@@ -101,7 +101,7 @@ optimizer = SGD(model.parameters(), lr=0.01, weight_decay= 0.0001)
 
 
 # Inference (public、private data)
-在驗證模型的部分，我們首先從讀取最佳模型開始，然後分別運行`Public data`、`Private data`，最後將它們合併在一起。
+在驗證模型的部分，我們首先從讀取最佳模型開始，然後分別運行`Public data`、`Private data`，最後將它們合併在一起，以`2_AI_CUP_mfcc13.ipynb`做舉例。
 ```python
 # Load model
 model.load_state_dict(torch.load("{}.pth".format("mfcc13_use_all")))
