@@ -13,7 +13,7 @@ Git link
 
 # Repository structure
 ```
-├ submit┌ output_mfcc13.npy
+┌ submit┌ output_mfcc13.npy
 │       ├ output_mfcc17.npy
 │       ├ output_mfcc21.npy
 │       ├ output_mfcc30.npy
