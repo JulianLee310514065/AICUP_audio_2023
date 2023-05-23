@@ -63,7 +63,7 @@ pip install sklearn==1.2.2
 [Google Drive Link](https://drive.google.com/drive/folders/10YqPS2SABOZw6mT9jD5gEUhVc2MnXaMK?usp=sharing)
 
 於`1_DataPreprocessing.ipynb`有定義`make_mfcc`函數，可透過輸入`DataFrame`與`n_mfcc`來獲得可供訓練或驗證的`.npy`檔。
-```
+```python
 def make_mfcc(df:pd.DataFrame, n_mfcc=13):
     for file_path in df['wave_path'].to_list():
 
@@ -85,8 +85,18 @@ def make_mfcc(df:pd.DataFrame, n_mfcc=13):
 在[repository](https://github.com/JulianLee310514065/AICUP_audio_2023/#Repository-structure)中有五個.pth檔，即為最好的模型，下載使用即可。
 
 # Training
-```
-介紹
+訓練模型程式寫在`2_AI_CUP_mfccxx.ipynb`中的`Training`部分，xx代表`n_mfcc`數，這裡值得注意的是，因為這次比賽的各類數量差異太大，故在定義`CrossEntropyLoss`時，我們使用了一個`weight`張量來設定每個類別的權重，以平衡各個類別在訓練過程中的影響。
+```python
+# Calculate the count of each class.
+numberlist = training_df['Disease category'].value_counts().sort_index().to_list()
+
+# model 
+model = Network().to(device)
+
+# optimizer
+weight = torch.tensor([1/numberlist[0], 1/numberlist[1], 1/numberlist[2], 1/numberlist[3], 1/numberlist[4]]).to(device)
+criterion = nn.CrossEntropyLoss(weight=weight)
+optimizer = SGD(model.parameters(), lr=0.01, weight_decay= 0.0001)
 ```
 
 
@@ -101,9 +111,9 @@ def make_mfcc(df:pd.DataFrame, n_mfcc=13):
 
 # Reproducing submission
 若要重現最終提交結果，可以做以下步驟:
-1. run [Prepared dataset](https://github.com/JulianLee310514065/AICUP_audio_2023/#Prepared-dataset)
+1. 完整跑 [Prepared dataset](https://github.com/JulianLee310514065/AICUP_audio_2023/#Prepared-dataset)
 2. 依序跑五個`2_AI_CUP_mfccxx.ipynb`，但不須跑`Training`部分
-3. run [Ensemble](https://github.com/JulianLee310514065/AICUP_audio_2023/#Ensemble)
+3. 完整跑 [Ensemble](https://github.com/JulianLee310514065/AICUP_audio_2023/#Ensemble)
 
 
 若需最後高分之上傳結果，也在[repository](https://github.com/JulianLee310514065/AICUP_audio_2023/#Repository-structure)中，為`submission.csv`
