@@ -13,7 +13,28 @@ Git link
 
 # Repository structure
 ```
-還沒寫
+├ submit┌ output_mfcc13.npy
+│       ├ output_mfcc17.npy
+│       ├ output_mfcc21.npy
+│       ├ output_mfcc30.npy
+│       └ output_mfcc50.npy
+│
+├ 1_DataPreprocessing.ipynb
+├ 2_AI_CUP_mfcc13.ipynb
+├ 2_AI_CUP_mfcc17.ipynb
+├ 2_AI_CUP_mfcc21.ipynb
+├ 2_AI_CUP_mfcc30.ipynb
+├ 2_AI_CUP_mfcc50.ipynb
+├ 3_Ensemble_pub_pri.ipynb
+├ LICENSE
+├ README.md
+├ mfcc13_use_all.pth
+├ mfcc17_use_all.pth
+├ mfcc21_use_all.pth
+├ mfcc30_use_all.pth
+├ mfcc50_use_all.pth
+└ submission.csv
+
 ```
 
 # Setting the environment
