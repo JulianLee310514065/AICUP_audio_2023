@@ -79,10 +79,21 @@ MFCC製作過程
 ```
 
 # Reproducing submission
-若要重現最終提交結果，可以做以下步驟，最後上傳結果也有在[repository](https://github.com/JulianLee310514065/AICUP_audio_2023/#Repository-structure)中，為`submission.csv`
+若要重現最終提交結果，可以做以下步驟:
+1. Prepared dataset
+2. 
+
+
+最後上傳結果也有在[repository](https://github.com/JulianLee310514065/AICUP_audio_2023/#Repository-structure)中，為`submission.csv`
 
 # Acknowledgement
-我們參考了以下網站
+前處理:
+* [AI CUP 2023 春季賽【多模態病理嗓音分類競賽】巡迴課程](https://www.youtube.com/playlist?list=PLk_m5EiRQRF3j35iw-93Wh4cGa5fy41gu)
+* [Deep Learning Audio Classification](https://medium.com/analytics-vidhya/deep-learning-audio-classification-fcbed546a2dd)
+
+模型架構:
+* [crnn-audio-classification](https://github.com/ksanjeevan/crnn-audio-classification#models)
+* [audio_classification](https://github.com/harmanpreet93/audio_classification)
 
 # Citation
 ```
