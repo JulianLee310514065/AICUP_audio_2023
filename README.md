@@ -125,8 +125,18 @@ np.save('output_mfcc13.npy', mmffcc13)
 ```
 
 # Ensemble
-```
-介紹
+結果集成的方面我使用的是機率相加，及五種模型與測出來的機率相加，然後取最高的類別作為該聲音資訊的預測結果，程式於`3_Ensemble_pun_pri.ipynb`中。
+```python
+# Load numpy file
+out1 = np.load('output_mfcc13.npy')
+out2 = np.load('output_mfcc17.npy')
+out3 = np.load('output_mfcc21.npy')
+out4 = np.load('output_mfcc30.npy')
+out5 = np.load('output_mfcc50.npy')
+
+# Ensemble
+out_all = out1 + out2 + out3 + out4 + out5
+predict_out = out_all.argmax(1)
 ```
 
 # Reproducing submission
