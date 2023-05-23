@@ -9,7 +9,9 @@
 
 
 # Getting the code
-Git link
+```
+git clone https://github.com/JulianLee310514065/AICUP_audio_2023.git
+```
 
 # Repository structure
 ```
