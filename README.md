@@ -82,10 +82,10 @@ def make_mfcc(df:pd.DataFrame, n_mfcc=13):
 
 
 # Download the best model
-在[repository](https://github.com/JulianLee310514065/AICUP_audio_2023/#Repository-structure)中有五個.pth檔，即為最好的模型，下載使用即可。
+在[repository](https://github.com/JulianLee310514065/AICUP_audio_2023/#Repository-structure)中有五個`mfcc??_use_all.pth`檔，即為對應`2_AI_CUP_mfcc??.ipynb`數的模型之最好的參數，下載使用即可。
 
 # Training
-訓練模型程式寫在`2_AI_CUP_mfccxx.ipynb`中的`Training`部分，xx代表`n_mfcc`數，這裡值得注意的是，因為這次比賽的各類數量差異太大，故在定義`CrossEntropyLoss`時，我們使用了一個`weight`張量來設定每個類別的權重，以平衡各個類別在訓練過程中的影響。
+訓練模型程式寫在`2_AI_CUP_mfcc??.ipynb`中的`Training`部分，`??`代表`n_mfcc`數，這裡值得注意的是，因為這次比賽的各類數量差異太大，故在定義`CrossEntropyLoss`時，我們使用了一個`weight`張量來設定每個類別的權重，以平衡各個類別在訓練過程中的影響。
 ```python
 # Calculate the count of each class.
 numberlist = training_df['Disease category'].value_counts().sort_index().to_list()
