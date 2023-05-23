@@ -107,13 +107,14 @@ optimizer = SGD(model.parameters(), lr=0.01, weight_decay= 0.0001)
 
 # Ensemble
 ```
+介紹
 ```
 
 # Reproducing submission
 若要重現最終提交結果，可以做以下步驟:
 1. 完整跑 [Prepared dataset](https://github.com/JulianLee310514065/AICUP_audio_2023/#Prepared-dataset)
 2. 依序跑五個`2_AI_CUP_mfccxx.ipynb`，但不須跑`Training`部分
-3. 完整跑 [Ensemble](https://github.com/JulianLee310514065/AICUP_audio_2023/#Ensemble)
+3. 完整跑 [Ensemble](https://github.com/JulianLee310514065/AICUP_audio_2023/#Ensemble)，即可得到最後結果。
 
 
 若需最後高分之上傳結果，也在[repository](https://github.com/JulianLee310514065/AICUP_audio_2023/#Repository-structure)中，為`submission.csv`
