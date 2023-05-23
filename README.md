@@ -59,10 +59,27 @@ pip install sklearn==1.2.2
 ```
 
 # Prepared dataset
+> 訓練資料連結
 [Google Drive Link](https://drive.google.com/drive/folders/10YqPS2SABOZw6mT9jD5gEUhVc2MnXaMK?usp=sharing)
+
+於`1_DataPreprocessing.ipynb`有定義`make_mfcc`函數，可透過輸入`DataFrame`與`n_mfcc`來獲得可供訓練或驗證的`.npy`檔。
 ```
-MFCC製作過程
+def make_mfcc(df:pd.DataFrame, n_mfcc=13):
+    for file_path in df['wave_path'].to_list():
+
+        signal_tem, sample_rate = librosa.load(file_path, sr=44100)
+        signal = signal_tem[:44100]        
+
+        n_fft = int(16/1000 * sample_rate)  
+        hop_length = int(8/1000 * sample_rate)
+
+        # MFCCs
+        MFCCs = librosa.feature.mfcc(y=signal, sr =sample_rate, n_fft=n_fft, hop_length=hop_length, n_mfcc=n_mfcc)
+        # print(MFCCs.shape)
+
+        np.save(file_path.replace('.wav', f'_mfcc_{n_mfcc}.npy'), MFCCs)
 ```
+
 
 # Download the best model
 在[repository](https://github.com/JulianLee310514065/AICUP_audio_2023/#Repository-structure)中有五個.pth檔，即為最好的模型，下載使用即可。
@@ -78,13 +95,18 @@ MFCC製作過程
 介紹
 ```
 
+# Ensemble
+```
+```
+
 # Reproducing submission
 若要重現最終提交結果，可以做以下步驟:
-1. Prepared dataset
-2. 
+1. run [Prepared dataset](https://github.com/JulianLee310514065/AICUP_audio_2023/#Prepared-dataset)
+2. 依序跑五個`2_AI_CUP_mfccxx.ipynb`，但不須跑`Training`部分
+3. run [Ensemble](https://github.com/JulianLee310514065/AICUP_audio_2023/#Ensemble)
 
 
-最後上傳結果也有在[repository](https://github.com/JulianLee310514065/AICUP_audio_2023/#Repository-structure)中，為`submission.csv`
+若需最後高分之上傳結果，也在[repository](https://github.com/JulianLee310514065/AICUP_audio_2023/#Repository-structure)中，為`submission.csv`
 
 # Acknowledgement
 前處理:
