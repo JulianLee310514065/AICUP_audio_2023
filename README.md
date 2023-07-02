@@ -12,9 +12,13 @@
 
 **第四名** + **趨勢科技潛力獎**
 
-![final](https://github.com/JulianLee310514065/AICUP_audio_2023/blob/main/image.png)
+<div align="center">
+	<img src="https://github.com/JulianLee310514065/AICUP_audio_2023/blob/main/image.png" alt="final" width="600">
+</div>
 
-
+<div align="center">
+	<img src="https://github.com/JulianLee310514065/AICUP_audio_2023/blob/main/%E8%B6%A8%E5%8B%A2%E7%A7%91%E6%8A%80%E7%8D%8E.jpg" alt="final" width="600">
+</div>
 
 # Getting the code
 ```
