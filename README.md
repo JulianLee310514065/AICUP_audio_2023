@@ -6,6 +6,14 @@
 |-|-|-|-|
 |0.600654|7 / 371|0.607568|6 / 371|
 
+---
+## 7/1 更新
+最後結果:
+
+**第四名** + **趨勢科技潛力獎**
+
+![final](https://github.com/JulianLee310514065/AICUP_audio_2023/blob/main/image.png)
+
 
 
 # Getting the code
