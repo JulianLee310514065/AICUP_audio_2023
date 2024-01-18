@@ -1,5 +1,9 @@
 # AICUP_audio_2023
-此repository為AICUP-2023 [多模態病理嗓音分類競賽](https://tbrain.trendmicro.com.tw/Competitions/Details/27)，用以上傳程式以及提交的答案用的。
+> **完整程式說明報告**[**(Link)**](https://github.com/JulianLee310514065/AICUP_audio_2023/blob/main/AI_CUP_2023%E5%A4%9A%E6%A8%A1%E6%85%8B%E7%97%85%E7%90%86%E5%97%93%E9%9F%B3%E5%88%86%E9%A1%9E_%E5%A0%B1%E5%91%8A_TEAM_3134.pdf)
+>
+> **多模態病理嗓音分類競賽**[**(Link)**](https://tbrain.trendmicro.com.tw/Competitions/Details/27)
+
+此repository為 AICUP-2023 多模態病理嗓音分類競賽，用以上傳程式以及提交的答案用的。
 
 # Leaderboard
 |Public Score|Public Rank|Private Score|Private Rank|
